@@ -1,5 +1,10 @@
 {
+  "replace": false,
   "values": [
-    "#minecraft:infiniburn_overworld"
+    "minecraft:basalt"
+    "minecraft:crimson_nylium",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:warped_nylium"
   ]
 }

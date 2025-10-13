@@ -12,8 +12,8 @@
   "disable_mob_generation": false,
   "legacy_random_source": true,
   "noise": {
-    "height": 128,
-    "min_y": 0,
+    "height": 384,
+    "min_y": -64,
     "size_horizontal": 1,
     "size_vertical": 2
   },
@@ -39,9 +39,9 @@
                 "argument1": {
                   "type": "minecraft:y_clamped_gradient",
                   "from_value": 0.0,
-                  "from_y": -8,
+                  "from_y": -64,
                   "to_value": 1.0,
-                  "to_y": 24
+                  "to_y": -40
                 },
                 "argument2": {
                   "type": "minecraft:add",
@@ -54,9 +54,9 @@
                       "argument1": {
                         "type": "minecraft:y_clamped_gradient",
                         "from_value": 1.0,
-                        "from_y": 104,
+                        "from_y": 260,
                         "to_value": 0.0,
-                        "to_y": 128
+                        "to_y": 320
                       },
                       "argument2": {
                         "type": "minecraft:add",
@@ -239,7 +239,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "minecraft:smooth_basalt"
                           }
                         }
                       }
@@ -368,7 +368,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "minecraft:smooth_basalt"
                           }
                         }
                       }
@@ -698,7 +698,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:gravel"
+                              "Name": "minecraft:soul_soil"
                             }
                           }
                         },
@@ -713,7 +713,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:gravel"
+                              "Name": "minecraft:soul_soil"
                             }
                           }
                         }
