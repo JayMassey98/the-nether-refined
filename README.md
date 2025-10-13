@@ -1,0 +1,97 @@
+# The Nether Refined
+
+This Minecraft data pack refines The Nether dimension whilst maintaining a vanilla-like feel.
+
+
+## World Generation
+
+In general, the Nether looks almost identical from y=0 to y=128 to how it does in vanilla Minecraft. However, there have been various changes made to the Nether in order to refine it.
+
+### General
+
+* Changed the maximum y value from 128 to 320.
+* Changed the minimum y value from 0 to -64.
+* Replaced gravel beaches with soul soil.
+* Replaced gravel walls with smooth basalt.
+
+### Basalt Deltas
+
+**[TODO]**
+
+### Crimson Forest
+
+**[TODO]**
+
+### Nether Wastes
+
+**[TODO]**
+
+### Soul Sand Valley
+
+**[TODO]**
+
+### Warped Forest
+
+**[TODO]**
+
+
+## Mob Spawns
+
+Several mob spawns have been altered in the biomes below.
+
+### Nether Wastes
+
+* Reduced the weight of Zombified Piglin spawns from 100 to 50.
+* Increased the weight of Blaze spawns from 0 to 50.
+
+### Soul Sand Valley
+
+* Replaced Ghast spawns with Vex spawns.
+* Reduced the weight of Skeleton spawns from 20 to 10.
+* Increased the weight of Wither Skeleton spawns from 0 to 10.
+
+### Warped Forest
+
+* Reduced the weight of Strider spawns from 60 to 30.
+* Increased the weight of Ghast spawns from 0 to 30.
+
+
+## General Changes
+
+To refine the Nether further, the following changes have been made.
+
+* Added the base terrain blocks of each biome to infinitely burn in the Nether:
+
+    * Basalt
+    * Crimson Nylium
+    * Soul Sand
+    * Soul Soil
+    * Warped Nylium
+
+* Changed the coordinate scale from 8 to 1, in order to:
+
+    * Align the world borders of the Overworld and the Nether. This is useful when playing on a server that relocates the Overworld spawn and updates the world border to match it. 
+    * Inspire building up infrastructure for travelling, instead of quick walks between portals.
+
+* Disabled beds blowing up when right-clicked, in order to:
+
+    * Stop new players from dying to an unexplained game mechanic.
+    * Stop the explosions from being used to mine ancient debris.
+
+* Disabled building above the Nether roof, in order to:
+
+    * Discourage safe creation of mob farms without danger.
+    * Discourage safe travelling without setting up infrastructure.
+
+
+## Compatibility
+
+The following Minecraft versions are supported:
+
+* 1.21.9
+
+
+## FAQ
+
+### Will previous versions be supported in the future?
+Yes, although this isn't a high priority at the moment. Please note though that certain features will not be possible to backport to older versions, such as dried ghasts spawning in nether fossils.
