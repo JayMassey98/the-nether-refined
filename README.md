@@ -16,7 +16,14 @@ In general, the Nether looks almost identical from y=0 to y=128 to how it does i
 
 ### Basalt Deltas
 
-**[TODO]**
+* Added basalt roof columns.
+* Changed basalt areas to be slightly harder to traverse.
+* Changed blackstone areas to be slightly easier to traverse.
+* Changed blackstone blobs to be 4x more abundant.
+* Changed deltas to have a minimum magma block rim size of 1 (was 0).
+* Changed spring deltas to spawn within basalt or blackstone blocks, but only when lava is detected up to 15 blocks below.
+* Removed glowstone.
+* Removed mushrooms.
 
 ### Crimson Forest
 
