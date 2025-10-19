@@ -9,8 +9,9 @@ In general, the Nether looks almost identical from y=0 to y=128 to how it does i
 
 ### General
 
-* Changed the maximum y value from 128 to 320.
-* Changed the minimum y value from 0 to -64.
+* Changed maximum y value from 128 to 320.
+* Changed minimum y value from 0 to -64.
+* Changed patch fire to spawn on all infinitely burning blocks.
 * Replaced gravel beaches with soul soil.
 * Replaced gravel walls with smooth basalt.
 
@@ -27,7 +28,17 @@ In general, the Nether looks almost identical from y=0 to y=128 to how it does i
 
 ### Crimson Forest
 
-**[TODO]**
+* Added netherrack roof columns.
+* Changed crimson forest vegetation so that only crimson related vegetation appears.
+* Changed weeping vines to spawn more frequently, some of which are now much longer.
+* Removed glowstone.
+* Removed mushrooms.
+* Replaced crimson fungi with crimson trees, which:
+    * Contain 2x2 trunks that can be anywhere from 8 to 48 blocks tall.
+    * Have large wart blocks canopies spreading outwards from the stem trunk.
+    * Feature weeping vines and shroomlights hanging down from the wart blocks.
+    * Spawn densely, featuring hyphae roots and no shroomlights on ground level.
+* Replaced gravel with smooth basalt.
 
 ### Nether Wastes
 
@@ -45,6 +56,11 @@ In general, the Nether looks almost identical from y=0 to y=128 to how it does i
 ## Mob Spawns
 
 Several mob spawns have been altered in the biomes below.
+
+### Crimson Forest
+
+* Reduced the weight of Hoglin spawns from 9 to 7.2.
+* Increased the weight of Zoglin spawns from 0 to 1.8.
 
 ### Nether Wastes
 
@@ -67,26 +83,22 @@ Several mob spawns have been altered in the biomes below.
 
 To refine the Nether further, the following changes have been made.
 
-* Added the base terrain blocks of each biome to infinitely burn in the Nether:
-
+* Added the following to the list of blocks that infinitely burn in the Nether:
     * Basalt
     * Crimson Nylium
-    * Soul Sand
-    * Soul Soil
+    * Nether Wart Block
     * Warped Nylium
+    * Warped Wart Block
 
 * Changed the coordinate scale from 8 to 1, in order to:
-
     * Align the world borders of the Overworld and the Nether. This is useful when playing on a server that relocates the Overworld spawn and updates the world border to match it. 
     * Inspire building up infrastructure for travelling, instead of quick walks between portals.
 
 * Disabled beds blowing up when right-clicked, in order to:
-
     * Stop new players from dying to an unexplained game mechanic.
     * Stop the explosions from being used to mine ancient debris.
 
 * Disabled building above the Nether roof, in order to:
-
     * Discourage safe creation of mob farms without danger.
     * Discourage safe travelling without setting up infrastructure.
 

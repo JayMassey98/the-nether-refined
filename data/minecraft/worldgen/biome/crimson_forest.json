@@ -37,7 +37,9 @@
     "water_fog_color": 329011
   },
   "features": [
-    [],
+    [
+      "the_nether_refined:crimson_forest/netherrack_roof_columns"
+    ],
     [],
     [],
     [],
@@ -45,13 +47,10 @@
     [],
     [],
     [
-      "minecraft:spring_open",
       "minecraft:patch_fire",
-      "minecraft:glowstone_extra",
-      "minecraft:glowstone",
       "minecraft:ore_magma",
       "minecraft:spring_closed",
-      "minecraft:ore_gravel_nether",
+      "the_nether_refined:ore_smooth_basalt_nether",
       "minecraft:ore_blackstone",
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
@@ -60,12 +59,12 @@
     ],
     [],
     [
-      "minecraft:spring_lava",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:weeping_vines",
-      "minecraft:crimson_fungi",
-      "minecraft:crimson_forest_vegetation"
+      "the_nether_refined:crimson_forest/crimson_tree",
+      "the_nether_refined:crimson_forest/crimson_tree_hyphae_roots",
+      "the_nether_refined:crimson_forest/crimson_tree_weeping_vines",
+      "the_nether_refined:crimson_forest/weeping_vines_long",
+      "the_nether_refined:crimson_forest/weeping_vines_short",
+      "the_nether_refined:crimson_forest/crimson_vegetation"
     ]
   ],
   "has_precipitation": false,
@@ -84,6 +83,12 @@
     "misc": [],
     "monster": [
       {
+        "type": "minecraft:zoglin",
+        "maxCount": 4,
+        "minCount": 3,
+        "weight": 1.8
+      },
+      {
         "type": "minecraft:zombified_piglin",
         "maxCount": 4,
         "minCount": 2,
@@ -93,7 +98,7 @@
         "type": "minecraft:hoglin",
         "maxCount": 4,
         "minCount": 3,
-        "weight": 9
+        "weight": 7.2
       },
       {
         "type": "minecraft:piglin",
