@@ -48,7 +48,7 @@
       "minecraft:red_mushroom_nether",
       "minecraft:ore_magma",
       "minecraft:spring_closed",
-      "minecraft:ore_gravel_nether",
+      "the_nether_refined:ore_smooth_basalt_nether",
       "minecraft:ore_blackstone",
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
@@ -87,16 +87,10 @@
         "type": "minecraft:zombified_piglin",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 50
+        "weight": 100
       },
       {
-        "type": "minecraft:blaze",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 50
-      },
-      {
-        "type": "minecraft:magma_cube",
+        "type": "minecraft:zoglin",
         "maxCount": 4,
         "minCount": 4,
         "weight": 2
@@ -108,7 +102,7 @@
         "weight": 1
       },
       {
-        "type": "minecraft:piglin",
+        "type": "minecraft:blaze",
         "maxCount": 4,
         "minCount": 4,
         "weight": 15

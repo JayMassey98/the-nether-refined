@@ -5,7 +5,7 @@ This Minecraft data pack refines The Nether dimension whilst maintaining a vanil
 
 ## World Generation
 
-In general, the Nether looks almost identical from y=0 to y=128 to how it does in vanilla Minecraft. However, there have been various changes made to the Nether in order to refine it.
+In general, the generated shape of the Nether looks almost identical from y=0 to y=128 to how it does in vanilla Minecraft. However, there have been various changes made to the Nether in order to refine it.
 
 ### General
 
@@ -42,7 +42,7 @@ In general, the Nether looks almost identical from y=0 to y=128 to how it does i
 
 ### Nether Wastes
 
-**[TODO]**
+* Replaced gravel with smooth basalt.
 
 ### Soul Sand Valley
 
@@ -64,8 +64,11 @@ Several mob spawns have been altered in the biomes below.
 
 ### Nether Wastes
 
-* Reduced the weight of Zombified Piglin spawns from 100 to 50.
-* Increased the weight of Blaze spawns from 0 to 50.
+zombified_piglin
+* Reduced the weight of Magma Cube spawns from 2 to 0.
+* Increased the weight of Zoglin spawns from 0 to 2.
+* Reduced the weight of Piglin spawns from 15 to 0.
+* Increased the weight of Blaze spawns from 0 to 15.
 
 ### Soul Sand Valley
 
@@ -91,7 +94,7 @@ To refine the Nether further, the following changes have been made.
     * Warped Wart Block
 
 * Changed the coordinate scale from 8 to 1, in order to:
-    * Align the world borders of the Overworld and the Nether. This is useful when playing on a server that relocates the Overworld spawn and updates the world border to match it. 
+    * Align the world borders of the Overworld and the Nether; this is useful when playing on a server that relocates the Overworld spawn and updates the world border to match it. 
     * Inspire building up infrastructure for travelling, instead of quick walks between portals.
 
 * Disabled beds blowing up when right-clicked, in order to:
