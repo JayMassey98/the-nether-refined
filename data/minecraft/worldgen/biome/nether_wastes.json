@@ -31,7 +31,10 @@
     "water_fog_color": 329011
   },
   "features": [
-    [],
+    [
+      "the_nether_refined:nether_wastes/glowstone_stalactite",
+      "the_nether_refined:nether_wastes/netherrack_stalactite"
+    ],
     [],
     [],
     [],
@@ -55,7 +58,13 @@
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small"
     ],
-    [],
+    [
+      "the_nether_refined:nether_wastes/lava_pool_stage_1",
+      "the_nether_refined:nether_wastes/lava_pool_stage_2",
+      "the_nether_refined:nether_wastes/lava_pool_stage_3",
+      "the_nether_refined:nether_wastes/lava_pool_stage_4",
+      "the_nether_refined:nether_wastes/lava_pool_stage_5"
+    ],
     [
       "minecraft:spring_lava",
       "minecraft:brown_mushroom_normal",
