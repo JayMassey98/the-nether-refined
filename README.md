@@ -46,7 +46,12 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
 
 ### Soul Sand Valley
 
-**[TODO]**
+* Removed basalt pillars.
+* Added blackstone blobs.
+* Replaced crimson root patches with vegetation that spawns ~4x as frequently.
+    * New nether wart patches spawn ~3x as frequently than the replaced crimson root.
+    * New wither roses spawn ~1x as frequently, but individually rather than in patches.
+* Replaced gravel with smooth basalt.
 
 ### Warped Forest
 
