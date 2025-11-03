@@ -37,7 +37,9 @@
     "water_fog_color": 329011
   },
   "features": [
-    [],
+    [
+      "the_nether_refined:soul_sand_valley/patch_blackstone_pile"
+    ],
     [],
     [],
     [],

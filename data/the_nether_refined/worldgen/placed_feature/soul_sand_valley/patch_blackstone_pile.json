@@ -1,0 +1,57 @@
+{
+	"feature": "the_nether_refined:soul_sand_valley/patch_blackstone_pile",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 34,
+						"data": 34
+					},
+					{
+						"weight": 21,
+						"data": 21
+					},
+					{
+						"weight": 13,
+						"data": 13
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 8,
+			"noise_factor": 8,
+			"noise_offset": -0.5
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"above_bottom": 5
+				},
+				"max_inclusive": {
+					"below_top": 5
+				}
+			}
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"direction_of_search": "down",
+			"max_steps": 32,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}
