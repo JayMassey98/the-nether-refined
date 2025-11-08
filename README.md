@@ -34,10 +34,10 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
 * Removed glowstone.
 * Removed mushrooms.
 * Replaced crimson fungi with crimson trees, which:
-    * Contain 2x2 trunks that can be anywhere from 8 to 48 blocks tall.
-    * Have large wart blocks canopies spreading outwards from the stem trunk.
+    * Spawn densely, with hyphae roots but no shroomlights on ground level.
+    * Contain 2x2 solid trunks that can be anywhere from 8 to 48 blocks tall.
+    * Have large wart block canopies spreading outwards from the stem trunk.
     * Feature weeping vines and shroomlights hanging down from the wart blocks.
-    * Spawn densely, featuring hyphae roots and no shroomlights on ground level.
 * Replaced gravel with smooth basalt.
 
 ### Nether Wastes
@@ -46,8 +46,8 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
 
 ### Soul Sand Valley
 
-* Removed basalt pillars.
 * Added blackstone blobs.
+* Removed basalt pillars.
 * Replaced crimson root patches with vegetation that spawns ~4x as frequently.
     * New nether wart patches spawn ~3x as frequently than the replaced crimson root.
     * New wither roses spawn ~1x as frequently, but individually rather than in patches.
@@ -55,7 +55,17 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
 
 ### Warped Forest
 
-**[TODO]**
+* Added warped wart ceiling columns.
+* Changed warped forest vegetation so that only warped related vegetation appears.
+* Changed twisting vines to spawn more frequently, some of which are now much longer.
+* Removed glowstone.
+* Removed mushrooms.
+* Replaced warped fungi with warped trees, which:
+    * Spawn densely, growing downwards from warped wart ceilings and canopies. 
+    * Contain 3x3 hollow trunks that can be anywhere from 8 to 48 blocks tall.
+    * Have large wart block canopies spreading outwards from the stem trunk.
+    * Feature weeping vines and shroomlights raising up from the wart blocks.
+* Replaced gravel with smooth basalt.
 
 
 ## Mob Spawns
@@ -69,7 +79,6 @@ Several mob spawns have been altered in the biomes below.
 
 ### Nether Wastes
 
-zombified_piglin
 * Reduced the weight of Magma Cube spawns from 2 to 0.
 * Increased the weight of Zoglin spawns from 0 to 2.
 * Reduced the weight of Piglin spawns from 15 to 0.
@@ -104,10 +113,10 @@ To refine the Nether further, the following changes have been made.
 
 * Disabled beds blowing up when right-clicked, in order to:
     * Stop new players from dying to an unexplained game mechanic.
-    * Stop the explosions from being used to mine ancient debris.
+    * Stop the explosions from being used to mine for ancient debris.
 
 * Disabled building above the Nether roof, in order to:
-    * Discourage safe creation of mob farms without danger.
+    * Discourage safe creation of mob farms without any danger.
     * Discourage safe travelling without setting up infrastructure.
 
 

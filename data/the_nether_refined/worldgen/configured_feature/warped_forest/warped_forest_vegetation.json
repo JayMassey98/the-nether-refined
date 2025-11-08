@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:nether_forest_vegetation",
+  "config": {
+    "spread_height": 10,
+    "spread_width": 6,
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "minecraft:warped_fungus"
+          },
+          "weight": 25
+        },
+        {
+          "data": {
+            "Name": "minecraft:warped_roots"
+          },
+          "weight": 75
+        }
+      ]
+    }
+  }
+}

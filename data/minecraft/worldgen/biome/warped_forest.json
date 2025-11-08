@@ -37,7 +37,16 @@
     "water_fog_color": 329011
   },
   "features": [
-    [],
+    [
+      "the_nether_refined:warped_forest/warped_wart_ceiling_columns",
+      "the_nether_refined:warped_forest/warped_tree_trunk_stem",
+      "the_nether_refined:warped_forest/warped_tree_trunk_hyphae_high",
+      "the_nether_refined:warped_forest/warped_tree_trunk_hyphae_low",
+      "the_nether_refined:warped_forest/warped_tree_foliage_base",
+      "the_nether_refined:warped_forest/warped_tree_foliage_shroomlights",
+      "the_nether_refined:warped_forest/warped_tree_foliage_canopy",
+      "the_nether_refined:warped_forest/warped_tree_twisting_vines"
+    ],
     [],
     [],
     [],
@@ -45,14 +54,11 @@
     [],
     [],
     [
-      "minecraft:spring_open",
       "minecraft:patch_fire",
       "minecraft:patch_soul_fire",
-      "minecraft:glowstone_extra",
-      "minecraft:glowstone",
       "minecraft:ore_magma",
       "minecraft:spring_closed",
-      "minecraft:ore_gravel_nether",
+      "the_nether_refined:ore_smooth_basalt_nether",
       "minecraft:ore_blackstone",
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
@@ -61,22 +67,15 @@
     ],
     [],
     [
-      "minecraft:spring_lava",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:warped_fungi",
-      "minecraft:warped_forest_vegetation",
+      "the_nether_refined:warped_forest/warped_forest_vegetation",
       "minecraft:nether_sprouts",
-      "minecraft:twisting_vines"
+      "the_nether_refined:warped_forest/twisting_vines",
+      "the_nether_refined:warped_forest/twisting_vines_biome_edge"
     ]
   ],
   "has_precipitation": false,
   "spawn_costs": {
     "minecraft:enderman": {
-      "charge": 1.0,
-      "energy_budget": 0.12
-    },
-    "minecraft:ghast": {
       "charge": 1.0,
       "energy_budget": 0.12
     }

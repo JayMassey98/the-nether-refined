@@ -1,0 +1,9 @@
+{
+  "feature": "the_nether_refined:warped_forest/warped_forest_vegetation",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 8
+    }
+  ]
+}
