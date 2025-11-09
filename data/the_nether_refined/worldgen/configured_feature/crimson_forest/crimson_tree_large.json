@@ -53,7 +53,7 @@
         "type": "minecraft:constant",
         "value": 1
       },
-      "height": 4,
+      "height": 5,
       "wide_bottom_layer_hole_chance": 0.1,
       "corner_hole_chance": 0.2,
       "hanging_leaves_chance": 0.3,

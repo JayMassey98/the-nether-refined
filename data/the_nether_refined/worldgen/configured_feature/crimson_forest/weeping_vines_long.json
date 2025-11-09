@@ -11,9 +11,9 @@
       {
         "height": {
           "type": "minecraft:clamped_normal",
-          "min_inclusive": 0,
-          "max_inclusive": 32,
-          "mean": 16,
+          "min_inclusive": 2,
+          "max_inclusive": 24,
+          "mean": 13,
           "deviation": 3
         },
         "provider": {

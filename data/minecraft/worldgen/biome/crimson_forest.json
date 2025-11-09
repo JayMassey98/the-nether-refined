@@ -38,7 +38,7 @@
   },
   "features": [
     [
-      "the_nether_refined:crimson_forest/netherrack_roof_columns"
+      "the_nether_refined:crimson_forest/netherrack_ceiling_columns"
     ],
     [],
     [],
@@ -62,9 +62,9 @@
       "the_nether_refined:crimson_forest/crimson_tree",
       "the_nether_refined:crimson_forest/crimson_tree_hyphae_roots",
       "the_nether_refined:crimson_forest/crimson_tree_weeping_vines",
-      "the_nether_refined:crimson_forest/weeping_vines_long",
-      "the_nether_refined:crimson_forest/weeping_vines_short",
-      "the_nether_refined:crimson_forest/crimson_vegetation"
+      "the_nether_refined:crimson_forest/weeping_vines",
+      "the_nether_refined:crimson_forest/weeping_vines_biome_edge",
+      "the_nether_refined:crimson_forest/crimson_forest_vegetation"
     ]
   ],
   "has_precipitation": false,

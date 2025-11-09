@@ -1,9 +1,9 @@
 {
-  "feature": "the_nether_refined:crimson_forest/weeping_vines_long",
+	"feature": "the_nether_refined:crimson_forest/weeping_vines_short",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 128
+      "count": 96
     },
     {
       "type": "minecraft:in_square"
@@ -25,13 +25,6 @@
       "direction_of_search": "down",
       "max_steps": 32,
       "target_condition": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "#minecraft:air"
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
         "type": "minecraft:all_of",
         "predicates": [
           {
@@ -42,19 +35,17 @@
               "minecraft:netherrack",
               "minecraft:nether_gold_ore",
               "minecraft:nether_quartz_ore",
-              "minecraft:nether_wart_block"
+              "minecraft:nether_wart_block",
+              "minecraft:soul_sand",
+              "minecraft:soul_soil"
             ]
           },
           {
             "type": "minecraft:matching_blocks",
-            "offset": [ 0, 0, 0 ],
             "blocks": "#minecraft:air"
           }
         ]
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }

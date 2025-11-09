@@ -1,5 +1,5 @@
 {
-  "feature": "the_nether_refined:crimson_forest/crimson_vegetation",
+  "feature": "the_nether_refined:crimson_forest/crimson_forest_vegetation",
   "placement": [
     {
       "type": "minecraft:height_range",
@@ -16,9 +16,6 @@
     {
       "type": "minecraft:count_on_every_layer",
       "count": 8
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }
