@@ -5,7 +5,7 @@ This Minecraft data pack refines The Nether dimension whilst maintaining a vanil
 
 ## World Generation
 
-In general, the generated shape of the Nether looks almost identical from y=0 to y=128 to how it does in vanilla Minecraft. However, there have been various changes made to the Nether in order to refine it.
+The generated shape of the Nether looks almost identical from y=0 to y=128 to how it does in vanilla Minecraft. However, there have been various changes made in order to refine the Nether.
 
 ### General
 
@@ -38,11 +38,6 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
     * Contain 2x2 solid trunks that can be anywhere from 8 to 48 blocks tall.
     * Have large wart block canopies spreading outwards from the stem trunk.
     * Feature weeping vines and shroomlights hanging down from the wart blocks.
-* Replaced gravel with smooth basalt.
-
-### Nether Wastes
-
-* Replaced gravel with smooth basalt.
 
 ### Soul Sand Valley
 
@@ -51,7 +46,6 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
 * Replaced crimson root patches with vegetation that spawns ~4x as frequently.
     * New nether wart patches spawn ~3x as frequently than the replaced crimson root.
     * New wither roses spawn ~1x as frequently, but individually rather than in patches.
-* Replaced gravel with smooth basalt.
 
 ### Warped Forest
 
@@ -65,7 +59,6 @@ In general, the generated shape of the Nether looks almost identical from y=0 to
     * Contain 3x3 hollow trunks that can be anywhere from 8 to 48 blocks tall.
     * Have large wart block canopies spreading outwards from the stem trunk.
     * Feature weeping vines and shroomlights raising up from the wart blocks.
-* Replaced gravel with smooth basalt.
 
 
 ## Mob Spawns
@@ -125,9 +118,10 @@ To refine the Nether further, the following changes have been made.
 The following Minecraft versions are supported:
 
 * 1.21.9
+* 1.21.10
 
 
 ## FAQ
 
 ### Will previous versions be supported in the future?
-Yes, although this isn't a high priority at the moment. Please note though that certain features will not be possible to backport to older versions, such as dried ghasts spawning in nether fossils.
+Yes, although this isn't a high priority at the moment.

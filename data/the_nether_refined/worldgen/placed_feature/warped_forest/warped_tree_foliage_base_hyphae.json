@@ -27,7 +27,7 @@
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 40
+      "count": 16
     },
     {
       "type": "minecraft:count",
@@ -58,10 +58,53 @@
           {
             "type": "minecraft:matching_blocks",
             "offset": [ 0, 1, 0 ],
-            "blocks": "minecraft:warped_stem"
+            "blocks": [
+              "minecraft:warped_hyphae",
+              "minecraft:warped_stem"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ -1, 0, 0 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ -1, 0, -1 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ 0, 0, -1 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ 1, 0, -1 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ 1, 0, 0 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ 1, 0, 1 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ 0, 0, 1 ],
+            "blocks": "#minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [ -1, 0, 1 ],
             "blocks": "#minecraft:air"
           }
         ]

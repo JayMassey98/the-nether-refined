@@ -32,7 +32,7 @@
 					}
 				]
 		},
-		"replaceable": "#the_nether_refined:crimson_nylium_and_netherrack",
+		"replaceable": "#the_nether_refined:crimson_forest_ceiling",
 		"ground_state": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
