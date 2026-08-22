@@ -1,41 +1,40 @@
 {
-  "attributes": {
-    "minecraft:audio/ambient_sounds": {
-      "additions": {
-        "sound": "minecraft:ambient.soul_sand_valley.additions",
-        "tick_chance": 0.0111
-      },
-      "loop": "minecraft:ambient.soul_sand_valley.loop",
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2,
-        "sound": "minecraft:ambient.soul_sand_valley.mood",
-        "tick_delay": 6000
-      }
+  "carvers": "minecraft:nether_cave",
+  "downfall": 0.0,
+  "effects": {
+    "additions_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.additions",
+      "tick_chance": 0.0111
     },
-    "minecraft:audio/background_music": {
-      "default": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "sound": "minecraft:music.nether.soul_sand_valley"
-      }
+    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
+    "fog_color": 1787717,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.soul_sand_valley.mood",
+      "tick_delay": 6000
     },
-    "minecraft:visual/ambient_particles": [
+    "music": [
       {
-        "particle": {
-          "type": "minecraft:ash"
+        "data": {
+          "max_delay": 24000,
+          "min_delay": 12000,
+          "replace_current_music": false,
+          "sound": "minecraft:music.nether.soul_sand_valley"
         },
-        "probability": 0.00625
+        "weight": 1
       }
     ],
-    "minecraft:visual/fog_color": "#1b4745",
-    "minecraft:visual/sky_color": "#6eb1ff",
-    "minecraft:visual/water_fog_color": "#050533"
-  },
-  "carvers": "minecraft:nether_cave",
-  "downfall": 0,
-  "effects": {
-    "water_color": "#3f76e4"
+    "music_volume": 1.0,
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.00625
+    },
+    "sky_color": 7254527,
+    "water_color": 4159204,
+    "water_fog_color": 329011
   },
   "features": [
     [],
@@ -134,5 +133,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 2
+  "temperature": 2.0
 }

@@ -12,6 +12,7 @@ The generated shape of the Nether looks almost identical from y=0 to y=128 to ho
 * Changed maximum y value from 128 to 320.
 * Changed minimum y value from 0 to -64.
 * Changed patch fire to spawn on all infinitely burning blocks.
+* Removed Nether fog (render distance fog is still present).
 * Replaced gravel beaches with soul soil.
 * Replaced gravel walls with smooth basalt.
 
@@ -119,9 +120,10 @@ The following Minecraft versions are supported:
 
 * 1.21.9
 * 1.21.10
+* 1.21.11
 
 
 ## FAQ
 
 ### Will previous versions be supported in the future?
-Yes, although this isn't a high priority at the moment.
+Maybe, although this isn't a high priority at the moment.
