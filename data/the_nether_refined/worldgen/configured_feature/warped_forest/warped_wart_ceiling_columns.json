@@ -8,7 +8,7 @@
 		"extra_edge_column_chance": 0.618,
 		"vegetation_chance": 1,
 		"xz_radius": 8,
-		"replaceable": "#the_nether_refinied:warped_forest_ceiling",
+		"replaceable": "#the_nether_refined:warped_forest_ceiling",
 		"ground_state": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
