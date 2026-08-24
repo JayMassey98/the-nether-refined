@@ -118,6 +118,7 @@ To refine the Nether further, the following changes have been made.
 
 The following Minecraft versions are supported:
 
+* 26.2
 * 26.1.2
 * 26.1.1
 * 26.1
