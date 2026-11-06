@@ -1,22 +1,20 @@
 {
-	"feature": {
-		"type": "minecraft:random_selector",
-		"config": {
-      "features": [
-        {
-          "chance": 0.382,
-          "feature": {
-            "feature": "the_nether_refined:warped_forest/twisting_vines_long",
-            "placement": []
-          }
+  "feature": {
+    "type": "minecraft:random_selector",
+    "features": [
+      {
+        "chance": 0.382,
+        "feature": {
+          "feature": "the_nether_refined:warped_forest/twisting_vines_long",
+          "placement": []
         }
-      ],
-      "default": {
-        "feature": "the_nether_refined:warped_forest/twisting_vines_short",
-        "placement": []
       }
-		}
-	},
+    ],
+    "default": {
+      "feature": "the_nether_refined:warped_forest/twisting_vines_short",
+      "placement": []
+    }
+  },
   "placement": [
     {
       "type": "minecraft:count",

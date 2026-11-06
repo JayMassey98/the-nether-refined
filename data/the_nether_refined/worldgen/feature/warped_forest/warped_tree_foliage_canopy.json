@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:block_column",
+  "direction": "up",
+  "allowed_placement": {
+    "type": "minecraft:all_of",
+    "predicates": [
+      {
+        "type": "minecraft:matching_blocks",
+        "blocks": "#minecraft:air"
+      }
+    ]
+  },
+  "prioritize_tip": false,
+  "layers": [
+    {
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 34,
+            "data": 2
+          },
+          {
+            "weight": 21,
+            "data": 3
+          },
+          {
+            "weight": 34,
+            "data": 4
+          }
+        ]
+      },
+      "provider": {
+        "type": "minecraft:simple",
+        "state": {
+          "id": "minecraft:warped_wart_block"
+        }
+      }
+    }
+  ]
+}

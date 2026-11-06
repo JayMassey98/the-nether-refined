@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:delta_feature",
+  "contents": {
+    "id": "minecraft:blackstone"
+  },
+  "rim": {
+    "id": "minecraft:blackstone"
+  },
+  "rim_size": {
+    "type": "minecraft:constant",
+    "value": 0
+  },
+  "size": {
+    "type": "minecraft:constant",
+    "value": 1
+  }
+}

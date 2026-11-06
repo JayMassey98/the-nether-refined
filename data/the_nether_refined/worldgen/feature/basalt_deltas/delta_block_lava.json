@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:delta_feature",
+  "contents": {
+    "id": "minecraft:lava",
+    "properties": {
+      "level": "0"
+    }
+  },
+  "rim": {
+    "id": "minecraft:lava",
+    "properties": {
+      "level": "0"
+    }
+  },
+  "rim_size": {
+    "type": "minecraft:constant",
+    "value": 0
+  },
+  "size": {
+    "type": "minecraft:constant",
+    "value": 1
+  }
+}

@@ -1,14 +1,14 @@
 {
-	"feature": "the_nether_refined:basalt_deltas/basalt_ceiling_columns",
-	"placement": [
-		{
-			"type": "minecraft:count",
-			"count": 96
-		},
-		{
-			"type": "minecraft:in_square"
-		},
-		{
+  "feature": "the_nether_refined:basalt_deltas/basalt_ceiling_columns",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 96
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
@@ -20,20 +20,20 @@
         }
       }
     },
-		{
-			"type": "minecraft:environment_scan",
-			"direction_of_search": "up",
-			"max_steps": 32,
-			"target_condition": {
-				"type": "minecraft:solid"
-			},
-			"allowed_search_condition": {
-				"type": "minecraft:matching_blocks",
-				"blocks": "#minecraft:air"
-			}
-		},
-		{
-			"type": "minecraft:biome"
-		}
-	]
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 32,
+      "target_condition": {
+        "type": "minecraft:solid"
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "#minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
 }

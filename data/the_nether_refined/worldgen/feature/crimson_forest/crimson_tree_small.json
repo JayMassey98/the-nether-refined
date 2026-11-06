@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:tree",
+  "minimum_size": {
+    "type": "minecraft:three_layers_feature_size"
+  },
+  "below_trunk_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:netherrack"
+    }
+  },
+  "trunk_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:crimson_stem",
+      "properties": {
+        "axis": "y"
+      }
+    }
+  },
+  "foliage_provider": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 2,
+        "data": {
+          "id": "minecraft:nether_wart_block"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "id": "minecraft:air"
+        }
+      }
+    ]
+  },
+  "trunk_placer": {
+    "type": "minecraft:mega_jungle_trunk_placer",
+    "base_height": 8,
+    "height_rand_a": 0,
+    "height_rand_b": 8
+  },
+  "foliage_placer": {
+    "type": "minecraft:jungle_foliage_placer",
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 1,
+      "max_inclusive": 3
+    },
+    "offset": {
+      "type": "minecraft:constant",
+      "value": 1
+    },
+    "height": 5
+  },
+  "decorators": []
+}

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:base_stone_nether",
+    "#minecraft:base_stone_overworld",
+    "#minecraft:nylium",
+    "#minecraft:substrate_overworld",
+    "#minecraft:wart_blocks",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil"
+  ]
+}
