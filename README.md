@@ -123,9 +123,6 @@ The following Minecraft versions are supported:
 * 26.1.2
 * 26.1.1
 * 26.1
-* 1.21.11
-* 1.21.10
-* 1.21.9
 
 
 ## Automated Testing
