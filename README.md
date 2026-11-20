@@ -126,3 +126,8 @@ The following Minecraft versions are supported:
 * 1.21.11
 * 1.21.10
 * 1.21.9
+
+
+## Automated Testing
+
+For more on the automated testing of this data pack, see the [ARMOUR README.md](./armour/README.md).
