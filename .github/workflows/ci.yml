@@ -4,7 +4,7 @@ on:
 
   # TODO: Change this to main once the automated testing branch is merged.
   push:
-    branches: [automated_testing]
+    branches: [automated_testing, version_testing]
 
   # Tuesday 19:00 UTC.
   # schedule:
