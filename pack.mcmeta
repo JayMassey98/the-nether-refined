@@ -21,8 +21,8 @@
         "max_format": [ 107, 1 ]
       },
       {
-        "directory": "snapshot/26.4/10_to_26.3_snapshot_2",
-        "min_format": 109,
+        "directory": "snapshot/26.4/1_to_10",
+        "min_format": 122,
         "max_format": 128
       },
       {
@@ -31,22 +31,22 @@
         "max_format": 128
       },
       {
-        "directory": "snapshot/26.4/8_to_8",
+        "directory": "snapshot/26.4/5_to_8",
         "min_format": 125,
         "max_format": 127
       },
       {
-        "directory": "snapshot/26.3/10_to_10",
+        "directory": "snapshot/26.3/7_to_10",
         "min_format": 115,
         "max_format": 118
       },
       {
-        "directory": "snapshot/26.3/9_to_9",
+        "directory": "snapshot/26.3/7_to_9",
         "min_format": 115,
         "max_format": 117
       },
       {
-        "directory": "snapshot/26.3/6_to_1",
+        "directory": "snapshot/26.3/1_to_6",
         "min_format": 108,
         "max_format": 113
       },
@@ -56,12 +56,12 @@
         "max_format": 113
       },
       {
-        "directory": "snapshot/26.3/5_to_5",
+        "directory": "snapshot/26.3/4_to_5",
         "min_format": 111,
         "max_format": 112
       },
       {
-        "directory": "snapshot/26.3/3_to_1",
+        "directory": "snapshot/26.3/1_to_3",
         "min_format": 108,
         "max_format": 110
       },
@@ -71,7 +71,7 @@
         "max_format": 110
       },
       {
-        "directory": "snapshot/26.3/2_to_2",
+        "directory": "snapshot/26.3/1_to_2",
         "min_format": 108,
         "max_format": 109
       },
@@ -81,7 +81,7 @@
         "max_format": 108
       },
       {
-        "directory": "snapshot/26.1/11_to_11",
+        "directory": "snapshot/26.1/1_to_11",
         "min_format": 95,
         "max_format": 100
       }
