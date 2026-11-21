@@ -75,7 +75,7 @@ jobs:
       # Server jars never change once published, so cache them by SHA-1.
       - uses: actions/cache@v6
         with:
-          path: .mc-cache
+          path: ${{ runner.temp }}/mc-cache
           key: server-jar-${{ matrix.sha1 }}
 
       # Spyglass ignores pack.mcmeta overlays, so build the pack as Minecraft
@@ -86,7 +86,7 @@ jobs:
           python3 .armour/scripts/build_version_pack.py
           --server-url "${{ matrix.server_url }}"
           --sha1 "${{ matrix.sha1 }}"
-          --cache-dir .mc-cache
+          --cache-dir "${{ runner.temp }}/mc-cache"
           --out build/pack
           --source-map build/source-map.json
 
@@ -119,14 +119,14 @@ jobs:
           --kind "${{ matrix.kind }}"
           --server-url "${{ matrix.server_url }}"
           --sha1 "${{ matrix.sha1 }}"
-          --cache-dir .mc-cache
+          --cache-dir "${{ runner.temp }}/mc-cache"
           --repo .
-          --work-dir server-run
+          --work-dir "${{ runner.temp }}/server-run"
 
       - name: Keep the server log
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: server-log-${{ matrix.id }}
-          path: server-run/server-output.log
+          path: ${{ runner.temp }}/server-run/server-output.log
           if-no-files-found: ignore
