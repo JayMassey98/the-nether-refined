@@ -64,7 +64,7 @@ jobs:
 
       - name: Install Spyglass
         working-directory: .armour/scripts/spyglass
-        run: npm ci --no-audit --no-fund
+        run: npm ci --no-audit --no-fund --no-bin-links
 
       # Each Minecraft version needs its own Java (21 for 1.21.x, 25 for 26.x).
       - uses: actions/setup-java@v4
