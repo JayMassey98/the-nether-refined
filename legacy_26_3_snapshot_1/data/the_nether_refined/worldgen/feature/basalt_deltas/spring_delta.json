@@ -5,7 +5,11 @@
   "rock_count": 4,
   "state": {
     "Name": "minecraft:lava",
+    "id": "minecraft:lava",
     "Properties": {
+      "falling": "true"
+    },
+    "properties": {
       "falling": "true"
     }
   },

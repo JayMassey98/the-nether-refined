@@ -33,7 +33,8 @@
       "provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:warped_wart_block"
+          "Name": "minecraft:warped_wart_block",
+          "id": "minecraft:warped_wart_block"
         }
       }
     }

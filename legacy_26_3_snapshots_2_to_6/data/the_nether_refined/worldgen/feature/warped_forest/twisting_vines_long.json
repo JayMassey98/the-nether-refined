@@ -18,7 +18,8 @@
       "provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:twisting_vines_plant"
+          "Name": "minecraft:twisting_vines_plant",
+          "id": "minecraft:twisting_vines_plant"
         }
       }
     },
@@ -28,7 +29,11 @@
         "type": "minecraft:simple_state_provider",
         "state": {
           "Name": "minecraft:twisting_vines",
+          "id": "minecraft:twisting_vines",
           "Properties": {
+            "age": "25"
+          },
+          "properties": {
             "age": "25"
           }
         }

@@ -11,7 +11,8 @@
   "ground_state": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "minecraft:netherrack"
+      "Name": "minecraft:netherrack",
+      "id": "minecraft:netherrack"
     }
   },
   "vegetation_feature": {
@@ -46,7 +47,8 @@
           "provider": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:warped_wart_block"
+              "Name": "minecraft:warped_wart_block",
+              "id": "minecraft:warped_wart_block"
             }
           }
         }

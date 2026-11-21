@@ -5,7 +5,8 @@
   "targets": [
     {
       "state": {
-        "Name": "minecraft:smooth_basalt"
+        "Name": "minecraft:smooth_basalt",
+        "id": "minecraft:smooth_basalt"
       },
       "target": {
         "block": "minecraft:netherrack",

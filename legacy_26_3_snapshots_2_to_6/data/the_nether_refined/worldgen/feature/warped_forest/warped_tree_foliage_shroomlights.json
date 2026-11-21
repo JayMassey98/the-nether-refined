@@ -3,7 +3,8 @@
   "to_place": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "minecraft:shroomlight"
+      "Name": "minecraft:shroomlight",
+      "id": "minecraft:shroomlight"
     }
   }
 }

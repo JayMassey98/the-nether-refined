@@ -44,7 +44,8 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "minecraft:crimson_fungus"
+          "Name": "minecraft:crimson_fungus",
+          "id": "minecraft:crimson_fungus"
         }
       }
     },

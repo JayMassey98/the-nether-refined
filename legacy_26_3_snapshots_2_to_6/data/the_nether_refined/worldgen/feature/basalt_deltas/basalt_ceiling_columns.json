@@ -12,7 +12,11 @@
     "type": "minecraft:simple_state_provider",
     "state": {
       "Name": "minecraft:basalt",
+      "id": "minecraft:basalt",
       "Properties": {
+        "axis": "y"
+      },
+      "properties": {
         "axis": "y"
       }
     }
@@ -42,7 +46,11 @@
             "type": "minecraft:simple_state_provider",
             "state": {
               "Name": "minecraft:basalt",
+              "id": "minecraft:basalt",
               "Properties": {
+                "axis": "y"
+              },
+              "properties": {
                 "axis": "y"
               }
             }

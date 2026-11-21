@@ -4,7 +4,11 @@
     "type": "minecraft:simple_state_provider",
     "state": {
       "Name": "minecraft:warped_hyphae",
+      "id": "minecraft:warped_hyphae",
       "Properties": {
+        "axis": "y"
+      },
+      "properties": {
         "axis": "y"
       }
     }

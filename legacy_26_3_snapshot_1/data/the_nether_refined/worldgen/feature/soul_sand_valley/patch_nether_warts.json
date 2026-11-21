@@ -4,7 +4,11 @@
     "type": "minecraft:simple_state_provider",
     "state": {
       "Name": "minecraft:nether_wart",
+      "id": "minecraft:nether_wart",
       "Properties": {
+        "age": "3"
+      },
+      "properties": {
         "age": "3"
       }
     }

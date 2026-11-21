@@ -11,19 +11,22 @@
   "below_trunk_provider": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "minecraft:netherrack"
+      "Name": "minecraft:netherrack",
+      "id": "minecraft:netherrack"
     }
   },
   "trunk_provider": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "minecraft:warped_wart_block"
+      "Name": "minecraft:warped_wart_block",
+      "id": "minecraft:warped_wart_block"
     }
   },
   "foliage_provider": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "minecraft:warped_wart_block"
+      "Name": "minecraft:warped_wart_block",
+      "id": "minecraft:warped_wart_block"
     }
   },
   "trunk_placer": {
@@ -55,7 +58,8 @@
       "block_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:warped_wart_block"
+          "Name": "minecraft:warped_wart_block",
+          "id": "minecraft:warped_wart_block"
         }
       },
       "directions": [

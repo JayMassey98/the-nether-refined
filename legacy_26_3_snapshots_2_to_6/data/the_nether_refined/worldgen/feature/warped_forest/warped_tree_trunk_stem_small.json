@@ -33,7 +33,11 @@
         "type": "minecraft:simple_state_provider",
         "state": {
           "Name": "minecraft:warped_stem",
+          "id": "minecraft:warped_stem",
           "Properties": {
+            "axis": "y"
+          },
+          "properties": {
             "axis": "y"
           }
         }

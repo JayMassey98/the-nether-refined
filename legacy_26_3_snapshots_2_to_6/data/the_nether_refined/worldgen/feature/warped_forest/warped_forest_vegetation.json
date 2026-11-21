@@ -5,13 +5,15 @@
     "entries": [
       {
         "data": {
-          "Name": "minecraft:warped_fungus"
+          "Name": "minecraft:warped_fungus",
+          "id": "minecraft:warped_fungus"
         },
         "weight": 25
       },
       {
         "data": {
-          "Name": "minecraft:warped_roots"
+          "Name": "minecraft:warped_roots",
+          "id": "minecraft:warped_roots"
         },
         "weight": 75
       }

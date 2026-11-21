@@ -5,13 +5,15 @@
     "entries": [
       {
         "data": {
-          "Name": "minecraft:crimson_fungus"
+          "Name": "minecraft:crimson_fungus",
+          "id": "minecraft:crimson_fungus"
         },
         "weight": 25
       },
       {
         "data": {
-          "Name": "minecraft:crimson_roots"
+          "Name": "minecraft:crimson_roots",
+          "id": "minecraft:crimson_roots"
         },
         "weight": 75
       }

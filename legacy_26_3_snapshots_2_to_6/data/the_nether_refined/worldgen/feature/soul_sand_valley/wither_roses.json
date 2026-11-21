@@ -3,7 +3,8 @@
   "to_place": {
     "type": "minecraft:simple_state_provider",
     "state": {
-      "Name": "minecraft:wither_rose"
+      "Name": "minecraft:wither_rose",
+      "id": "minecraft:wither_rose"
     }
   }
 }
