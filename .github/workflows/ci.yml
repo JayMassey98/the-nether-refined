@@ -19,8 +19,8 @@ concurrency:
 
 jobs:
 
-  # Ask Mojang which Minecraft versions to target: every release from 1.21.9
-  # onwards, and every snapshot, pre-release and release candidate since then.
+  # Ask Mojang which Minecraft versions to target: every release from 26.1
+  # onwards, and every 26.1 snapshot, pre-release and release candidate.
   get-minecraft-versions:
     name: Discover Minecraft versions
     runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
           submodules: true
       - name: Query Mojang's version manifest
         id: discover
-        run: python3 .armour/scripts/get_minecraft_versions.py --release-from 1.21.9 --snapshot-after 1.21.9 --legacy-snapshots --exclude 26w14a
+        run: python3 .armour/scripts/get_minecraft_versions.py --release-from 26.1 --snapshot-after 1.21.11 --exclude 26w14a
 
   # Lint the pack with Spyglass against every target version.
   # Snapshot failures are reported but never turn the workflow red; releases do.

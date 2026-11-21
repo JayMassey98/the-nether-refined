@@ -10,14 +10,14 @@
         "color": "yellow"
       }
     ],
-    "min_format": [ 101, 1 ],
+    "min_format": 95,
     "max_format": 121
   },
   "overlays": {
     "entries": [
       {
         "directory": "release/26.2",
-        "min_format": [ 101, 1 ],
+        "min_format": 95,
         "max_format": [ 107, 1 ]
       },
       {
