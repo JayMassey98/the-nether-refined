@@ -16,107 +16,107 @@
   "overlays": {
     "entries": [
       {
-        "directory": "26.2",
+        "directory": "26.2/release",
         "min_format": 88,
         "max_format": [ 107, 1 ]
       },
       {
-        "directory": "1.21.11",
+        "directory": "1.21.11/release",
         "min_format": 88,
         "max_format": [ 94, 1 ]
       },
       {
-        "directory": "1.21.9",
+        "directory": "1.21.9/release",
         "min_format": 88,
         "max_format": 88
       },
       {
-        "directory": "interim_26.4-snapshot-10_from_26.3-snapshot-2",
+        "directory": "26.4/snapshot/10-to-26.3-snapshot-2",
         "min_format": 109,
         "max_format": 128
       },
       {
-        "directory": "interim_26.4-snapshot-10",
+        "directory": "26.4/snapshot/10-to-10",
         "min_format": 128,
         "max_format": 128
       },
       {
-        "directory": "interim_26.4-snapshot-8",
+        "directory": "26.4/snapshot/8-to-8",
         "min_format": 125,
         "max_format": 127
       },
       {
-        "directory": "interim_26.3-snapshot-10",
+        "directory": "26.3/snapshot/10-to-10",
         "min_format": 115,
         "max_format": 118
       },
       {
-        "directory": "interim_26.3-snapshot-9",
+        "directory": "26.3/snapshot/9-to-9",
         "min_format": 115,
         "max_format": 117
       },
       {
-        "directory": "interim_26.3-snapshot-6_from_26.3-snapshot-1",
+        "directory": "26.3/snapshot/6-to-1",
         "min_format": 108,
         "max_format": 113
       },
       {
-        "directory": "interim_26.3-snapshot-6",
+        "directory": "26.3/snapshot/6-to-6",
         "min_format": 113,
         "max_format": 113
       },
       {
-        "directory": "interim_26.3-snapshot-5",
+        "directory": "26.3/snapshot/5-to-5",
         "min_format": 111,
         "max_format": 112
       },
       {
-        "directory": "interim_26.3-snapshot-3_from_26.3-snapshot-1",
+        "directory": "26.3/snapshot/3-to-1",
         "min_format": 108,
         "max_format": 110
       },
       {
-        "directory": "interim_26.3-snapshot-3",
+        "directory": "26.3/snapshot/3-to-3",
         "min_format": 110,
         "max_format": 110
       },
       {
-        "directory": "interim_26.3-snapshot-2",
+        "directory": "26.3/snapshot/2-to-2",
         "min_format": 108,
         "max_format": 109
       },
       {
-        "directory": "interim_26.3-snapshot-1",
+        "directory": "26.3/snapshot/1-to-1",
         "min_format": 108,
         "max_format": 108
       },
       {
-        "directory": "interim_26.1-snapshot-11",
+        "directory": "26.1/snapshot/11-to-11",
         "min_format": 95,
         "max_format": 100
       },
       {
-        "directory": "interim_25w44a",
+        "directory": "1.21.11/snapshot/25w44a-to-25w44a",
         "min_format": 92,
         "max_format": 92
       },
       {
-        "directory": "interim_25w43a_from_25w42a",
+        "directory": "1.21.11/snapshot/25w43a-to-25w42a",
         "min_format": 90,
         "max_format": 91
       },
       {
-        "directory": "interim_25w43a",
+        "directory": "1.21.11/snapshot/25w43a-to-25w43a",
         "min_format": 91,
         "max_format": 91
       },
       {
-        "directory": "interim_25w42a",
+        "directory": "1.21.11/snapshot/25w42a-to-25w42a",
         "min_format": 90,
         "max_format": 90
       },
       {
-        "directory": "interim_25w41a",
+        "directory": "1.21.11/snapshot/25w41a-to-25w41a",
         "min_format": 89,
         "max_format": 89
       }
