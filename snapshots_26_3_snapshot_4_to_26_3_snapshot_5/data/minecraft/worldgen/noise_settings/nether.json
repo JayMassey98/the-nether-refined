@@ -1,10 +1,15 @@
 {
   "default_block": {
-    "Name": "minecraft:netherrack"
+    "Name": "minecraft:netherrack",
+    "id": "minecraft:netherrack"
   },
   "default_fluid": {
     "Name": "minecraft:lava",
     "Properties": {
+      "level": "0"
+    },
+    "id": "minecraft:lava",
+    "properties": {
       "level": "0"
     }
   },
