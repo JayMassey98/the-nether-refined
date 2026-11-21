@@ -21,102 +21,102 @@
         "max_format": [ 107, 1 ]
       },
       {
-        "directory": "1.21.11/release",
+        "directory": "1.21.11_release",
         "min_format": 88,
         "max_format": [ 94, 1 ]
       },
       {
-        "directory": "1.21.9/release",
+        "directory": "1.21.9_release",
         "min_format": 88,
         "max_format": 88
       },
       {
-        "directory": "26.4/snapshot/10-to-26.3-snapshot-2",
+        "directory": "26.4/snapshot/10_to_26.3_snapshot_2",
         "min_format": 109,
         "max_format": 128
       },
       {
-        "directory": "26.4/snapshot/10-to-10",
+        "directory": "26.4/snapshot/10_to_10",
         "min_format": 128,
         "max_format": 128
       },
       {
-        "directory": "26.4/snapshot/8-to-8",
+        "directory": "26.4/snapshot/8_to_8",
         "min_format": 125,
         "max_format": 127
       },
       {
-        "directory": "26.3/snapshot/10-to-10",
+        "directory": "26.3/snapshot/10_to_10",
         "min_format": 115,
         "max_format": 118
       },
       {
-        "directory": "26.3/snapshot/9-to-9",
+        "directory": "26.3/snapshot/9_to_9",
         "min_format": 115,
         "max_format": 117
       },
       {
-        "directory": "26.3/snapshot/6-to-1",
+        "directory": "26.3/snapshot/6_to_1",
         "min_format": 108,
         "max_format": 113
       },
       {
-        "directory": "26.3/snapshot/6-to-6",
+        "directory": "26.3/snapshot/6_to_6",
         "min_format": 113,
         "max_format": 113
       },
       {
-        "directory": "26.3/snapshot/5-to-5",
+        "directory": "26.3/snapshot/5_to_5",
         "min_format": 111,
         "max_format": 112
       },
       {
-        "directory": "26.3/snapshot/3-to-1",
+        "directory": "26.3/snapshot/3_to_1",
         "min_format": 108,
         "max_format": 110
       },
       {
-        "directory": "26.3/snapshot/3-to-3",
+        "directory": "26.3/snapshot/3_to_3",
         "min_format": 110,
         "max_format": 110
       },
       {
-        "directory": "26.3/snapshot/2-to-2",
+        "directory": "26.3/snapshot/2_to_2",
         "min_format": 108,
         "max_format": 109
       },
       {
-        "directory": "26.3/snapshot/1-to-1",
+        "directory": "26.3/snapshot/1_to_1",
         "min_format": 108,
         "max_format": 108
       },
       {
-        "directory": "26.1/snapshot/11-to-11",
+        "directory": "26.1/snapshot/11_to_11",
         "min_format": 95,
         "max_format": 100
       },
       {
-        "directory": "1.21.11/snapshot/25w44a-to-25w44a",
+        "directory": "1.21.11_snapshot_25w44a_to_25w44a",
         "min_format": 92,
         "max_format": 92
       },
       {
-        "directory": "1.21.11/snapshot/25w43a-to-25w42a",
+        "directory": "1.21.11_snapshot_25w43a_to_25w42a",
         "min_format": 90,
         "max_format": 91
       },
       {
-        "directory": "1.21.11/snapshot/25w43a-to-25w43a",
+        "directory": "1.21.11_snapshot_25w43a_to_25w43a",
         "min_format": 91,
         "max_format": 91
       },
       {
-        "directory": "1.21.11/snapshot/25w42a-to-25w42a",
+        "directory": "1.21.11_snapshot_25w42a_to_25w42a",
         "min_format": 90,
         "max_format": 90
       },
       {
-        "directory": "1.21.11/snapshot/25w41a-to-25w41a",
+        "directory": "1.21.11_snapshot_25w41a_to_25w41a",
         "min_format": 89,
         "max_format": 89
       }
