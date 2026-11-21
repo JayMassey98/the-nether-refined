@@ -36,11 +36,13 @@ jobs:
         id: discover
         run: python3 .armour/scripts/get_minecraft_versions.py --release-from 1.21.9 --snapshot-after 1.21.9 --legacy-snapshots --exclude 26w14a
 
-  # Lint the pack with Spyglass against every target version.
+  # For every target version, lint the pack with Spyglass and then start a real,
+  # headless Minecraft server with it. Both run as steps of ONE job so that the
+  # server step is skipped (and the job fails) when the lint step fails: a
+  # matrix job cannot depend on the matching entry of another matrix job.
   # Snapshot failures are reported but never turn the workflow red; releases do.
-  lint:
-
-    name: Lint (${{ matrix.id }})
+  test:
+    name: Test (${{ matrix.id }})
     needs: get-minecraft-versions
     runs-on: ubuntu-latest
     continue-on-error: ${{ matrix.kind == 'snapshot' }}
@@ -63,6 +65,12 @@ jobs:
       - name: Install Spyglass
         working-directory: .armour/scripts/spyglass
         run: npm ci --no-audit --no-fund
+
+      # Each Minecraft version needs its own Java (21 for 1.21.x, 25 for 26.x).
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
 
       # Server jars never change once published, so cache them by SHA-1.
       - uses: actions/cache@v6
@@ -89,7 +97,7 @@ jobs:
           key: spyglass-data-${{ matrix.id }}-${{ github.run_id }}
           restore-keys: spyglass-data-${{ matrix.id }}-
 
-      - name: Spyglass lint
+      - name: Lint (Spyglass)
         run: >
           node .armour/scripts/spyglass/lint.mjs
           --root build/pack
@@ -98,37 +106,9 @@ jobs:
           --cache-dir .spyglass-cache
           ${{ matrix.kind == 'snapshot' && '--allow-unsupported' || '' }}
 
-  # Start a real, headless Minecraft server with the pack for every target
-  # version. The pack only changes world generation, so there are no functions to
-  # test: the server just has to start and load the pack without errors.
-  # Snapshot failures are reported but never turn the workflow red; releases do.
-  server-load:
-    name: Load (${{ matrix.id }})
-    needs: get-minecraft-versions
-    runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.kind == 'snapshot' }}
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJSON(needs.get-minecraft-versions.outputs.matrix) }}
-
-    steps:
-
-      - uses: actions/checkout@v7
-        with:
-          submodules: true
-
-      # Each Minecraft version needs its own Java (21 for 1.21.x, 25 for 26.x).
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: ${{ matrix.java }}
-
-      # Server jars never change once published, so cache them by SHA-1.
-      - uses: actions/cache@v6
-        with:
-          path: .mc-cache
-          key: server-jar-${{ matrix.sha1 }}
-
+      # The pack only changes world generation, so there are no functions to
+      # test: the server just has to start and load the pack without errors.
+      # Skipped automatically when the lint step above fails.
       # Snapshots can have a newer pack format than pack.mcmeta declares, so
       # `--kind` lets ARMOUR widen max_format for them (releases run as shipped).
       - name: Load the pack on a Minecraft ${{ matrix.id }} server
