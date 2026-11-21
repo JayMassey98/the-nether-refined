@@ -56,7 +56,9 @@
                 }
               }
             }
-          }
+          },
+          "cell_size_xz": 4,
+          "cell_size_y": 8
         }
       },
       "right": {
@@ -82,7 +84,8 @@
       "shift_z": 0.0,
       "xz_scale": 0.25,
       "y_scale": 0.0
-    }
+    },
+    "chunk_surface_level": 0.0
   },
   "sea_level": 32,
   "spawn_target": []
