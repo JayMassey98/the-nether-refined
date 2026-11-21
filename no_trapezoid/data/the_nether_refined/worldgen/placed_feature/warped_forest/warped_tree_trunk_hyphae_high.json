@@ -1,0 +1,38 @@
+{
+  "feature": "the_nether_refined:warped_forest/warped_tree_trunk_hyphae",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
+      "type": "minecraft:count",
+      "count": 256
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 32
+        },
+        "max_inclusive": {
+          "below_top": 5
+        }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 32,
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "offset": [ 0, 12, 0 ],
+        "blocks": "minecraft:warped_stem"
+      }
+    }
+  ]
+}
