@@ -16,9 +16,64 @@
   "overlays": {
     "entries": [
       {
+        "directory": "26.4-snapshot-10",
+        "min_format": 109,
+        "max_format": 1000
+      },
+      {
+        "directory": "26.4-snapshot-8",
+        "min_format": 125,
+        "max_format": 127
+      },
+      {
+        "directory": "26.4-snapshot-4",
+        "min_format": 119,
+        "max_format": 124
+      },
+      {
+        "directory": "26.3-snapshot-10",
+        "min_format": 114,
+        "max_format": 118
+      },
+      {
+        "directory": "26.3-snapshot-9",
+        "min_format": 115,
+        "max_format": 117
+      },
+      {
+        "directory": "26.3-snapshot-6",
+        "min_format": 109,
+        "max_format": 113
+      },
+      {
+        "directory": "26.3-snapshot-5",
+        "min_format": 111,
+        "max_format": 112
+      },
+      {
+        "directory": "26.3-snapshot-3",
+        "min_format": 110,
+        "max_format": 110
+      },
+      {
+        "directory": "26.3-snapshot-2",
+        "min_format": 109,
+        "max_format": 109
+      },
+      {
+        "directory": "26.3-snapshot-1",
+        "min_format": 108,
+        "max_format": 108
+      },
+      {
         "directory": "26.2",
         "min_format": 88,
         "max_format": [ 107, 1 ]
+      },
+      {
+        "directory": "26.1-snapshot-11",
+        "min_format": 95,
+        "max_format": 100
       },
       {
         "directory": "1.21.11",
@@ -26,114 +81,24 @@
         "max_format": [ 94, 1 ]
       },
       {
-        "directory": "1.21.9",
+        "directory": "25w44a",
+        "min_format": 92,
+        "max_format": 92
+      },
+      {
+        "directory": "25w43a",
+        "min_format": 91,
+        "max_format": 91
+      },
+      {
+        "directory": "25w42a",
+        "min_format": 90,
+        "max_format": 90
+      },
+      {
+        "directory": "25w41a",
         "min_format": 88,
         "max_format": 89
-      },
-      {
-        "directory": "carver_26_3",
-        "min_format": 109,
-        "max_format": 1000
-      },
-      {
-        "directory": "snapshot_25w42a",
-        "min_format": 90,
-        "max_format": [ 90, 0 ]
-      },
-      {
-        "directory": "snapshot_25w43a",
-        "min_format": 91,
-        "max_format": [ 91, 0 ]
-      },
-      {
-        "directory": "snapshot_25w44a",
-        "min_format": 92,
-        "max_format": [ 92, 0 ]
-      },
-      {
-        "directory": "snapshots_26_1_snapshot_1_to_26_1_snapshot_5",
-        "min_format": 95,
-        "max_format": [ 98, 0 ]
-      },
-      {
-        "directory": "no_trapezoid",
-        "min_format": 95,
-        "max_format": [ 100, 0 ]
-      },
-      {
-        "directory": "snapshots_26_1_snapshot_6_to_26_1_snapshot_7",
-        "min_format": 99,
-        "max_format": [ 99, 1 ]
-      },
-      {
-        "directory": "snapshots_26_1_snapshot_8_to_26_1_snapshot_10",
-        "min_format": [ 99, 2 ],
-        "max_format": [ 99, 3 ]
-      },
-      {
-        "directory": "snapshot_26_1_snapshot_11",
-        "min_format": 100,
-        "max_format": [ 100, 0 ]
-      },
-      {
-        "directory": "snapshot_26_3_snapshot_1",
-        "min_format": 108,
-        "max_format": [ 108, 0 ]
-      },
-      {
-        "directory": "legacy_26_3_snapshot_1",
-        "min_format": 108,
-        "max_format": [ 108, 0 ]
-      },
-      {
-        "directory": "snapshot_26_3_snapshot_2",
-        "min_format": 109,
-        "max_format": [ 109, 0 ]
-      },
-      {
-        "directory": "legacy_26_3_snapshots_2_to_6",
-        "min_format": 109,
-        "max_format": [ 113, 0 ]
-      },
-      {
-        "directory": "snapshot_26_3_snapshot_3",
-        "min_format": 110,
-        "max_format": [ 110, 0 ]
-      },
-      {
-        "directory": "snapshots_26_3_snapshot_4_to_26_3_snapshot_5",
-        "min_format": 111,
-        "max_format": [ 112, 0 ]
-      },
-      {
-        "directory": "snapshot_26_3_snapshot_6",
-        "min_format": 113,
-        "max_format": [ 113, 0 ]
-      },
-      {
-        "directory": "legacy_26_3_snapshots_7_to_10",
-        "min_format": 114,
-        "max_format": [ 118, 0 ]
-      },
-      {
-        "directory": "snapshot_26_3_snapshot_7",
-        "min_format": 115,
-        "max_format": [ 115, 0 ]
-      },
-      {
-        "directory": "snapshots_26_3_snapshot_8_to_26_3_snapshot_9",
-        "min_format": 116,
-        "max_format": [ 117, 0 ]
-      },
-      {
-        "directory": "snapshots_26_4_snapshot_5_to_26_4_snapshot_8",
-        "min_format": 125,
-        "max_format": [ 127, 0 ]
-      },
-      {
-        "directory": "snapshots_26_4_snapshot_10_to_26_4_snapshot_9",
-        "min_format": 128,
-        "max_format": [ 128, 0 ]
       }
     ]
   }

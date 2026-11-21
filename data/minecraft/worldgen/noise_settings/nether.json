@@ -6,9 +6,7 @@
         "left": {
           "type": "minecraft:squeeze",
           "input": {
-            "type": "minecraft:interpolated",
-            "cell_size_xz": 4,
-            "cell_size_y": 8,
+            "type": "minecraft:upscale",
             "input": {
               "type": "minecraft:mul",
               "left": {
@@ -42,6 +40,18 @@
                 }
               },
               "right": 0.64
+            },
+            "x": {
+              "cell_size": 4,
+              "mode": "interpolate_linear"
+            },
+            "y": {
+              "cell_size": 8,
+              "mode": "interpolate_linear"
+            },
+            "z": {
+              "cell_size": 4,
+              "mode": "interpolate_linear"
             }
           }
         },
@@ -49,7 +59,7 @@
           "type": "minecraft:beardifier"
         }
       },
-      "label": "N"
+      "label": "Final Density"
     },
     {
       "function": {
@@ -61,7 +71,7 @@
         "xz_scale": 0.25,
         "y_scale": 0
       },
-      "label": "T"
+      "label": "Temperature"
     },
     {
       "function": {
@@ -73,10 +83,9 @@
         "xz_scale": 0.25,
         "y_scale": 0
       },
-      "label": "V"
+      "label": "Vegetation"
     }
   ],
-  "default_block": "minecraft:netherrack",
   "default_fluid": "minecraft:lava",
   "disable_mob_generation": false,
   "legacy_random_source": true,
@@ -86,18 +95,16 @@
     "min_y": -64
   },
   "noise_router": {
-    "chunk_surface_level": 0,
-    "continents": 0,
-    "depth": 0,
-    "erosion": 0,
+    "chunk_surface_level": 0.0,
+    "continents": 0.0,
+    "depth": 0.0,
+    "erosion": 0.0,
     "final_density": {
       "type": "minecraft:add",
       "left": {
         "type": "minecraft:squeeze",
         "input": {
-          "type": "minecraft:interpolated",
-          "cell_size_xz": 4,
-          "cell_size_y": 8,
+          "type": "minecraft:upscale",
           "input": {
             "type": "minecraft:mul",
             "left": {
@@ -131,6 +138,18 @@
               }
             },
             "right": 0.64
+          },
+          "x": {
+            "cell_size": 4,
+            "mode": "interpolate_linear"
+          },
+          "y": {
+            "cell_size": 8,
+            "mode": "interpolate_linear"
+          },
+          "z": {
+            "cell_size": 4,
+            "mode": "interpolate_linear"
           }
         }
       },
@@ -138,7 +157,7 @@
         "type": "minecraft:beardifier"
       }
     },
-    "ridges": 0,
+    "ridges": 0.0,
     "temperature": {
       "type": "minecraft:noise",
       "noise": "minecraft:nether/temperature",
@@ -159,5 +178,6 @@
     }
   },
   "sea_level": 32,
-  "spawn_target": []
+  "spawn_target": [],
+  "default_block": "minecraft:netherrack"
 }
