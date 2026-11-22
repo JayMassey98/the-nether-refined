@@ -39,14 +39,15 @@ jobs:
 
   # Lint each Minecraft version with Spyglass, then load it on a real server.
   # Each version runs independently: loading only occurs if its lint succeeds.
-  # Snapshot failures are reported but never turn the workflow red; releases do.
+  # Any failing version, snapshot or release, turns the workflow red. Warnings
+  # that Mojang's own data also triggers are only NOTEs (see .armour's README),
+  # so a remaining warning or error is a real problem.
   test:
 
     # A job is run for each Minecraft version that is discovered.
     name: Test (${{ matrix.id }})
     needs: get-minecraft-versions
     runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.kind == 'snapshot' }}
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.get-minecraft-versions.outputs.matrix) }}

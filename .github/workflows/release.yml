@@ -1,0 +1,54 @@
+name: Release
+
+# This workflow never publishes anything. You make the release yourself on
+# GitHub. It builds the data pack zip exactly as Minecraft needs it:
+#
+#   * On every push to the branches below (and when run manually) it uploads the
+#     zip as a workflow artifact so you can try it in game.
+#   * When you publish a release on GitHub, it builds the zip for that tag and
+#     attaches it to your release.
+#
+# The git repository keeps overlays in nested folders (snapshot/26.3/1_to_2).
+# Minecraft only accepts flat overlay names, so the zip uses snapshot_26.3_1_to_2
+# folders and a pack.mcmeta rewritten to match. Never zip the repo by hand.
+on:
+  push:
+    branches: [automated_testing, test_commit_split_v2]
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    name: Build the data pack zip
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # only used to attach the zip to a release you publish
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: true
+
+      - name: Build the zip
+        id: build
+        run: >
+          python3 .armour/scripts/build_release_pack.py
+          --name The-Nether-Refined
+          --version "${{ github.event_name == 'release' && github.event.release.tag_name || format('dev-{0}', github.sha) }}"
+          --out dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.zip_name }}
+          path: ${{ steps.build.outputs.zip_path }}
+          if-no-files-found: error
+
+      # Only when you publish a release on GitHub: attach the zip to it.
+      - name: Attach the zip to the release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" "${{ steps.build.outputs.zip_path }}" --clobber
