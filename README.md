@@ -116,13 +116,12 @@ To refine the Nether further, the following changes have been made.
 
 ## Compatibility
 
-The following Minecraft versions are supported:
+The following Minecraft releases are supported:
 
 * 26.3
 * 26.2
 * 26.1.2
 * 26.1.1
 * 26.1
-* 1.21.11
-* 1.21.10
-* 1.21.9
+
+All snapshots for these versions (and 26.4) are supported.
