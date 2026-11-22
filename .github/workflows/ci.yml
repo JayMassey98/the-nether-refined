@@ -38,7 +38,8 @@ jobs:
         id: discover
         run: python3 .armour/scripts/get_minecraft_versions.py --release-from 26.1 --snapshot-after 1.21.11
 
-  # Source overlays may use nested paths; ARMOUR flattens them for the staged pack.
+  # Source overlays may use nested paths; build_version_pack merges them into a
+  # version-specific data tree. Both lint and the server load test consume that same tree.
   # Lint each Minecraft version with Spyglass, then load it on a real server.
   # Each version runs independently: loading only occurs if its lint succeeds.
   # Snapshot failures are reported but never turn the workflow red; releases do.
