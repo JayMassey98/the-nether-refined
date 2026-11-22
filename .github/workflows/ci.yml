@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - automated_testing
+      - test_commit_split_v2
 
   # Tuesday 19:00 UTC.
   # schedule:
