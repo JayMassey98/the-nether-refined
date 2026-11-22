@@ -1,0 +1,131 @@
+name: CI
+
+on:
+
+  push:
+    branches:
+      - automated_testing
+
+  # Tuesday 19:00 UTC.
+  # schedule:
+    # - cron: "0 19 * * 2"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  # Ask Mojang which Minecraft versions to target: every release from 26.1
+  # onwards, and every 26.1 snapshot, pre-release and release candidate.
+  get-minecraft-versions:
+    name: Discover Minecraft versions
+    runs-on: ubuntu-latest
+    outputs:
+      versions: ${{ steps.discover.outputs.versions }}
+      matrix: ${{ steps.discover.outputs.matrix }}
+      count: ${{ steps.discover.outputs.count }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: true
+      - name: Query Mojang's version manifest
+        id: discover
+        run: python3 .armour/scripts/get_minecraft_versions.py --release-from 26.1 --snapshot-after 1.21.11
+
+  # Lint each Minecraft version with Spyglass, then load it on a real server.
+  # Each version runs independently: loading only occurs if its lint succeeds.
+  # Snapshot failures are reported but never turn the workflow red; releases do.
+  test:
+
+    # A job is run for each Minecraft version that is discovered.
+    name: Test (${{ matrix.id }})
+    needs: get-minecraft-versions
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.kind == 'snapshot' }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.get-minecraft-versions.outputs.matrix) }}
+
+    steps:
+
+      # Check out the repository.
+      - uses: actions/checkout@v7
+        with:
+          submodules: true
+
+      # Set up Node for Spyglass.
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: .armour/scripts/spyglass/package-lock.json
+
+      # Install the Spyglass linter.
+      - name: Install Spyglass
+        working-directory: .armour/scripts/spyglass
+        run: npm ci --no-audit --no-fund --no-bin-links
+
+      # Server jars never change once published, so cache them by SHA-1.
+      - uses: actions/cache@v6
+        with:
+          path: ${{ runner.temp }}/mc-cache
+          key: server-jar-${{ matrix.sha1 }}
+
+      # Build the pack as Minecraft would load it for this version.
+      - name: Build the pack for ${{ matrix.id }}
+        run: >
+          python3 .armour/scripts/build_version_pack.py
+          --server-url "${{ matrix.server_url }}"
+          --sha1 "${{ matrix.sha1 }}"
+          --cache-dir "${{ runner.temp }}/mc-cache"
+          --out build/pack
+          --source-map build/source-map.json
+
+      # Cache Spyglass data separately for each Minecraft version.
+      - uses: actions/cache@v6
+        with:
+          path: .spyglass-cache
+          key: spyglass-data-${{ matrix.id }}-${{ github.run_id }}
+          restore-keys: spyglass-data-${{ matrix.id }}-
+
+      # Lint this version.
+      - name: Lint ${{ matrix.id }}
+        run: >
+          node .armour/scripts/spyglass/lint.mjs
+          --root build/pack
+          --game-version "${{ matrix.id }}"
+          --source-map build/source-map.json
+          --cache-dir .spyglass-cache
+          ${{ matrix.kind == 'snapshot' && '--allow-unsupported' || '' }}
+
+      # If the linting succeeds, set up the Java version required.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+
+      # Load this version.
+      - name: Load ${{ matrix.id }}
+        run: >
+          python3 .armour/scripts/run_server_tests.py
+          --load-only
+          --version "${{ matrix.id }}"
+          --kind "${{ matrix.kind }}"
+          --server-url "${{ matrix.server_url }}"
+          --sha1 "${{ matrix.sha1 }}"
+          --cache-dir "${{ runner.temp }}/mc-cache"
+          --repo .
+          --work-dir "${{ runner.temp }}/server-run"
+
+      # Keep the server log, including when the load step fails.
+      - name: Keep the server log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-log-${{ matrix.id }}
+          path: ${{ runner.temp }}/server-run/server-output.log
+          if-no-files-found: ignore

@@ -124,4 +124,9 @@ The following Minecraft releases are supported:
 * 26.1.1
 * 26.1
 
-All snapshots for these versions (and 26.4) are supported.
+Snapshots are also supported, including those for the next upcoming release.
+However, the latest snapshot(s) will only appear once support has been added.
+
+## Automated Testing
+
+For more on the automated testing of this data pack, see the [ARMOUR README.md](./armour/README.md).
