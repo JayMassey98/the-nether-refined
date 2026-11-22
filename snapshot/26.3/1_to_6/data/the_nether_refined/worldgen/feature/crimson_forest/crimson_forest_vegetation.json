@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted_state_provider",
+    "entries": [
+      {
+        "data": {
+          "Name": "minecraft:crimson_fungus",
+          "id": "minecraft:crimson_fungus"
+        },
+        "weight": 25
+      },
+      {
+        "data": {
+          "Name": "minecraft:crimson_roots",
+          "id": "minecraft:crimson_roots"
+        },
+        "weight": 75
+      }
+    ]
+  }
+}
