@@ -104,7 +104,6 @@ jobs:
           --source-map build/source-map.json
           --cache-dir .spyglass-cache
           ${{ matrix.kind == 'snapshot' && '--allow-unsupported' || '' }}
-          ${{ contains(fromJSON('["26.3-snapshot-1","26.3-snapshot-2","26.3-snapshot-3"]'), matrix.id) && '--allow-undeclared' || '' }}
 
       # If the linting succeeds, set up the Java version required.
       - uses: actions/setup-java@v4
