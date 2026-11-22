@@ -38,6 +38,7 @@ jobs:
         id: discover
         run: python3 .armour/scripts/get_minecraft_versions.py --release-from 26.1 --snapshot-after 1.21.11
 
+  # Overlay directories in pack.mcmeta must be flat names beginning with overlay_.
   # Lint each Minecraft version with Spyglass, then load it on a real server.
   # Each version runs independently: loading only occurs if its lint succeeds.
   # Snapshot failures are reported but never turn the workflow red; releases do.
