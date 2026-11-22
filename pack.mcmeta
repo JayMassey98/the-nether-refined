@@ -1,15 +1,15 @@
 {
   "pack": {
-    "description": {
-      "text": "The Nether Refined\n",
-      "color": "gold",
-      "extra": [
-        {
-          "text": "Made by Monkeymad358",
-          "color": "yellow"
-        }
-      ]
-    },
+    "description": [
+      {
+        "text": "The Nether Refined\n",
+        "color": "gold"
+      },
+      {
+        "text": "Made by Monkeymad358",
+        "color": "yellow"
+      }
+    ],
     "min_format": 95,
     "max_format": 121
   },
