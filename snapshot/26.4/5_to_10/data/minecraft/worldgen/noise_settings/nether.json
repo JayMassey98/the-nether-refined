@@ -178,6 +178,5 @@
     }
   },
   "sea_level": 32,
-  "spawn_target": [],
-  "default_block": "minecraft:netherrack"
+  "spawn_target": []
 }
