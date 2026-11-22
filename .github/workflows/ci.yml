@@ -6,6 +6,7 @@ on:
     branches:
       - automated_testing
       - test_commit_split_v2
+      - issue_solve
 
   # Tuesday 19:00 UTC.
   # schedule:
